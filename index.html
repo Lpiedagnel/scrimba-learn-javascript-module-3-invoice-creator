@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Invoice Creator</h1>
+            <h2>Thanks for choosing GoodCorp, LLC!</h2>
+        </header>
+        <main class="main">
+            <section>
+                <button class="price-btn" id="wash-btn">Wash Car: $10</button>
+                <button class="price-btn" id="mow-btn">Mow Lawn: $20</button>
+                <button class="price-btn" id="pull-btn">Pull Weeds: $30</button>
+            </section>
+            <section>
+                <table class="task-table">
+                    <thead class="hidden-thead" id="thead-task-table">
+                        <tr>
+                            <td colspan="3">Task</td>
+                            <td>Total</td>
+                        </tr>
+                    </thead>
+                    <tbody id="task-list-table">
+                        <!-- Insert the tasks here -->
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <hr>
+                <table class="notes-table">
+                    <thead>
+                        <tr>
+                            <td>Notes</td>
+                            <td>Total Amount</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td class="notes-informations">We accept cash, credit card, or Paypal</td>
+                        <td class="total-amount" id="total-amount">$0</td>
+                    </tbody>
+                </table>
+                <button class="button-send" id="send-btn">Send invoice</button>
+            </section>
+        </main>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-blue: rgb(33, 94, 209);
+    --main-blue-hover: rgb(25, 73, 161);
+    --dark-blue: rgb(28, 39, 61);
+    --button-grey: rgb(172, 172, 172);
+    --text-grey: rgb(88, 88, 88);
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    border: solid 3px white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--main-blue);
+    color: white;
+}
+
+.header h2 {
+    font-size: 1rem;
+}
+
+/* MAIN */
+
+.main {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 15px;
+}
+
+.main .price-btn {
+    padding: 15px;
+    background-color: var(--button-grey);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.main .price-btn:hover {
+    background-color: var(--text-grey);
+    cursor: pointer;
+}
+
+/* TASK TABLE */
+
+.task-table {
+    text-align: left;
+    margin: 35px auto;
+}
+
+.hidden-thead {
+    display: none;
+}
+
+.task-table thead tr td {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.task-table .task-btn {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+
+.task-table .remove-btn {
+    color: var(--text-grey);
+    font-size: 0.8rem;
+}
+
+.task-table .remove-btn:hover {
+    color: var(--button-grey);
+    cursor: pointer;
+}
+
+.task-table .spacing-td {
+    width: 60%;
+}
+
+.task-table .task-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.task-table .task-price span {
+    color: var(--text-grey);
+}
+
+/* NOTES */
+
+.notes-table {
+    color: var(--text-grey);
+    text-align: left;
+    margin: 35px auto;
+    width: 75%;
+}
+
+.notes-table td {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.notes-table .notes-informations {
+    font-weight: normal;
+}
+
+.notes-table .total-amount {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* SEND BUTTON */
+
+.button-send {
+    color: white;
+    background-color: var(--main-blue);
+    font-weight: bold;
+    width: 75%;
+    border: none;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.button-send:hover {
+    cursor: pointer;
+    background-color: var(--main-blue-hover);
+}
