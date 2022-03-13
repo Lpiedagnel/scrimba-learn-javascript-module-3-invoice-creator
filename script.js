@@ -1,6 +1,6 @@
-/*** Variables ***/
+/***** VARIABLES *****/
 
-// Variables of the document
+/* INSIDE THE DOCUMENT */
 const washCar = document.getElementById('wash-btn')
 const mowLawn = document.getElementById('mow-btn')
 const pullWeeds = document.getElementById('pull-btn')
@@ -9,13 +9,13 @@ const taskList = document.getElementById('task-list-table')
 const displayTotalAmount = document.getElementById('total-amount')
 const sendBtn = document.getElementById('send-btn')
 
-// Variables task
+/* OUTSIDE THE DOCUMENT */
 let totalAmount = 0
 let allPrice = []
 let allTask = []
 
 
-/*** Functions ***/
+/***** FUNCTIONS *****/
 
 // Add the thead of the task-table after select a task
 function addThead() {
@@ -34,7 +34,6 @@ function renderTask() {
         `
         <tr>
             <td class="task-btn">${allTask[i]}</td>
-            <td class="remove-btn">Remove</td>
             <td class="spacing-td"></td>
             <td class="task-price"><span>$</span>${allPrice[i]}</td>
         </tr>
