@@ -34,7 +34,7 @@ function renderTask() {
         `
         <tr>
             <td class="task-btn">${allTask[i]}</td>
-            <td class="remove-btn" id="remove-btn">Remove</td>
+            <td class="remove-btn" onclick="removeTask('${allTask[i]}', ${allPrice[i]})">Remove</td>
             <td class="spacing-td"></td>
             <td class="task-price"><span>$</span>${allPrice[i]}</td>
         </tr>
@@ -53,6 +53,14 @@ function addTask(task, price) {
     allPrice.push(price)
     renderTask()
     }
+}
+
+// Remove task
+function removeTask(task, price) {
+    totalAmount -= price
+    allPrice.splice(allPrice.indexOf(price), 1)
+    allTask.splice(allTask.indexOf(task), 1)
+    renderTask()
 }
 
 // Reset everything after click to send
