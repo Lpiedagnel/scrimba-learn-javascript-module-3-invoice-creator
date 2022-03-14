@@ -103,6 +103,14 @@ body {
     color: var(--text-grey);
 }
 
+.task-table .remove-btn {
+    color: var(--text-grey);
+}
+
+.task-table .remove-btn:hover {
+    color: var(--text-white);
+}
+
 /* NOTES */
 
 .notes-table {

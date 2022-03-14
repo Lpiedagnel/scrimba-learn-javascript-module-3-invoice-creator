@@ -34,6 +34,7 @@ function renderTask() {
         `
         <tr>
             <td class="task-btn">${allTask[i]}</td>
+            <td class="remove-btn" id="remove-btn">Remove</td>
             <td class="spacing-td"></td>
             <td class="task-price"><span>$</span>${allPrice[i]}</td>
         </tr>
