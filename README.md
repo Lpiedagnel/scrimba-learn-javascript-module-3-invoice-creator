@@ -16,7 +16,3 @@ Warning: this is not an official correction made by Scrimba. If anything, I stro
 - Total cost stays updated
 - Button to "send invoice" (reset)
 - Stretch: remove items after adding
-
-## Known issues
-
-- The last exercise is to add a remove button next to the service. Still working on that.
