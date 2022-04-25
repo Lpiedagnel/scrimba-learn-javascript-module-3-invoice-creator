@@ -87,7 +87,6 @@ body {
 
 .task-table {
     color: var(--button-grey);
-    cursor: pointer;
 }
 
 .task-table .spacing-td {
@@ -109,6 +108,7 @@ body {
 
 .task-table .remove-btn:hover {
     color: var(--text-white);
+    cursor: pointer;
 }
 
 /* NOTES */
